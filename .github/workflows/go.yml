@@ -65,4 +65,4 @@ jobs:
       with:
         repository: nhat-tong/hello-gitops-cd
         github_token: ${{ secrets.REPO_CD_TOKEN  }}
-        branch: master
+        branch: ${{ github.head_ref }}
