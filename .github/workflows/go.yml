@@ -59,11 +59,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -am "Bump docker tag"
-        git push origin master
 
-    #- name: Push changes
-    #  uses: ad-m/github-push-action@master
-    #  with:
-    #    repository: nhat-tong/hello-gitops-cd
-    #    github_token: ${{ secrets.REPO_CD_TOKEN  }}
-    #    branch: ${{ github.head_ref }}
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        repository: nhat-tong/hello-gitops-cd
+        github_token: ${{ secrets.ACCESS_TOKEN }}
