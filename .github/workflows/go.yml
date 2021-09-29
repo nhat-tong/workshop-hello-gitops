@@ -64,4 +64,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         repository: nhat-tong/hello-gitops-cd
-        github_token: ${{ secrets.REPO_CD_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN  }}
