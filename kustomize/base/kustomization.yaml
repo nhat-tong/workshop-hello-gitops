@@ -7,5 +7,5 @@ resources:
 namespace: hello-gitops
 images:
 - name: hello-gitops
-  newName: emmsys/hello-gitops
-  newTag: bd0b95a1e7e31fd3a30c0a979ffbfc45761b001f
+  newName: demoopenshift/hello-gitops
+  newTag: 885c276f67befa4ed2f9fea04778f4dc699b195d
