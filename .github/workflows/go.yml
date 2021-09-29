@@ -63,4 +63,5 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: nhat-tong/hello-gitops-cd
+        github_token: ${{ secrets.REPO_CD_TOKEN }}
